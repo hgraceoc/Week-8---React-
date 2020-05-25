@@ -3,6 +3,7 @@ import React from "react";
 
 
 const People = ({ people }) => (
+    people ? (
     <ul className="thePeople">
         {people.map((value, index) => (
             <li className="person" key={ index }>
@@ -10,6 +11,8 @@ const People = ({ people }) => (
             </li>
         ))}
     </ul>
+    ) : <p>Nothing to see here</p>
+    
 );
 
 
