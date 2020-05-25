@@ -17,4 +17,9 @@ Header.defaultProps = {
   text: "Howdy"
 }
 
+Paragraph.defaultProps = {
+  paragraph: "What a nice day for an ice cream and ice skating"
+  }
+
+
 export default App;
