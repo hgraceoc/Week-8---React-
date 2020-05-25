@@ -1,10 +1,9 @@
 import React from "react";
 
-let people = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"];
 
 
-const People = () => (
-    <ul class="thePeople">
+const People = ({ people }) => (
+    <ul className="thePeople">
         {people.map((value, index) => (
             <li className="person" key={ index }>
                 <p className="person-item">{ value }</p>
@@ -16,3 +15,5 @@ const People = () => (
 
 
 export default People;  
+
+//in this case, people.map - people does not need to be in { braces } because it has already been destructed by passing it in as an initial parameter

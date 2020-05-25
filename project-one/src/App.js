@@ -27,5 +27,9 @@ Paragraph.defaultProps = {
    colour: "red" 
  }
 
+ People.defaultProps = {
+  people: ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]
+ }
+
 
 export default App;
