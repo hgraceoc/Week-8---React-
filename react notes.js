@@ -201,3 +201,58 @@ export default Header;
 Header.defaultProps = {
     text: "Howdy"
   }
+
+//to use children as an input
+
+//Header.js
+import React from "react";
+
+const Header = ({ children }) => (
+<header className="header">
+    <h1>{ children }</h1>
+</header>
+);
+//use children in place of text input
+
+Header.defaultProps = {
+    children: "Howdy"
+  }
+//move the default props to the component file, rather than App.js file
+
+export default Header;
+
+//App.js
+<Header>Howdy</Header>
+//children passed in between the header tags 
+
+//creating a fragment 
+//App.js
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Stuff from "./components/Stuff";
+
+const App = () => (
+  <Stuff />
+);
+
+export default App;
+//App.js now only links to one file (Stuff.js)
+
+//Stuff.js
+import React from 'react';
+import Header from "./Header";
+import Paragraph from "./Paragraph";
+import Square from "./Square";
+import People from "./People";
+
+const Stuff = () => (
+    <div>
+        <Header>Howdy</Header>
+        <Paragraph>Hello hello hello</Paragraph>
+        <Square />
+        <People />
+  </div>
+);
+
+export default Stuff;
