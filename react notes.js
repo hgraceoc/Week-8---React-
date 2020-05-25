@@ -109,6 +109,8 @@ const App = () => {
 
 //adding additional js functionality to components
 //Content.js
+
+//Funding.js - to be used within Content.js
 const Content = () => {
     let valuation = 45000;
     let formattedValue = valuation.toLocaleString("en-GB", {
@@ -121,3 +123,22 @@ const Content = () => {
         <p>Our company is worth {formattedValue}</p>
     </main>
 }
+
+//Pagination.js
+let numbers = [1, 2, 3, 4, 5];
+
+const Pagination = () => {
+    <ul className="pagination">
+        {numbers.map((value, index) => (
+            <li className="page-item" key={index}>
+                <a className="page-link" href={"/" + value}>
+                    {value}
+                </a>            
+            </li>
+        ))}
+    </ul>
+};
+
+//using { curlies } to pass in jsx 
+//this would generate the amount of li's passed into the numbers array, this applies even as the array changes.
+//It uses the data to dynamically apply html 
