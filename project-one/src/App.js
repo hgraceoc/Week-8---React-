@@ -13,4 +13,8 @@ const App = () => (
   </div>
 );
 
+Header.defaultProps = {
+  text: "Howdy"
+}
+
 export default App;
