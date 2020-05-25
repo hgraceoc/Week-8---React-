@@ -9,4 +9,8 @@ const Square = ({ colour }) => (
     </div>
 );
 
+Square.defaultProps = {
+    colour: "red" 
+  }
+
 export default Square;  

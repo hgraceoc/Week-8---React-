@@ -15,6 +15,9 @@ const People = ({ people }) => (
     
 );
 
+People.defaultProps = {
+    people: ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]
+   }
 
 
 export default People;  

@@ -1,35 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from "./components/Header";
-import Paragraph from "./components/Paragraph";
-import Square from "./components/Square";
-import People from "./components/People";
+// import Header from "./components/Header";
+// import Paragraph from "./components/Paragraph";
+// import Square from "./components/Square";
+// import People from "./components/People";
+import Stuff from "./components/Stuff";
 
 const App = () => (
-  <div>
-  <Header />
-  <Paragraph />
-  <Square />
-  <People />
-  </div>
+  <Stuff />
 );
 
-Header.defaultProps = {
-  text: "Howdy"
-}
-
-Paragraph.defaultProps = {
-  paragraph: "What a nice day for an ice cream and ice skating"
-  }
-
- Square.defaultProps = {
-   colour: "red" 
- }
-
- People.defaultProps = {
-  people: ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]
- }
-
-
+ 
 export default App;
