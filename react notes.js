@@ -82,9 +82,9 @@ export default Header;
 //then in App.js
 import Header from "./components/Header";
 
-const App = () => {
-    return <Header />;
-};
+const App = () => (
+    <Header />
+  );
 
 
 //Content.js
@@ -142,3 +142,62 @@ const Pagination = () => {
 //using { curlies } to pass in jsx 
 //this would generate the amount of li's passed into the numbers array, this applies even as the array changes.
 //It uses the data to dynamically apply html 
+
+//components with props
+
+const props = {
+    alt: "A horse in a hat"
+    src: "http://hathorse"
+}
+
+const Figure = ({alt, src}) => {
+}
+<figure className="card">
+    <img></img>
+</figure>
+
+
+import Figure from "./components/Figure";
+
+const App = () => {
+    return (
+    <>
+    <Header />;
+    <Figure alt="A cat" src="http.." />
+    <Figure alt="A hat" src="http.." />
+    </>
+    )
+};
+
+//if a prop isnt passed in, we can leave it out of rendering 
+const Header = ({ title, subTitle }) => (
+    <header>
+        <h1 className="alert alert-primary">{title}</h1>
+        {subTitle ? <h3>{subTitle}</h3> : null}
+    </header>
+);
+
+//default props
+//after componenet declaration
+//before exports
+
+Figure.defaultProps = {
+    alt: "Your caption here",
+    src: "http://placeholder.com/350x350px"
+}
+
+//header component which can accept text prop
+import React from "react";
+
+const Header = ({ text }) => (
+<header className="header">
+    <h1>{ text }</h1>
+</header>
+);
+
+export default Header;
+
+//App.js
+Header.defaultProps = {
+    text: "Howdy"
+  }
