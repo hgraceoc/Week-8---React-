@@ -52,3 +52,72 @@ const cathead = new Cat('cathead', 'yellow' );
 //setting a new instance of the class
 cathead.meow()
 //prints 'mewo purr'
+
+
+
+//REACT
+
+//camel case is used rather than border_bottom -> borderBottom
+//inline styling in react
+
+
+const App = () => {
+    let sentence = "Hiya";
+    return <h1 className="alert alert-primary" style={{color: red}}></h1>
+}
+
+
+//Example of creating new component
+
+
+//src -> componentents
+//Headers.js
+
+import React from "react";
+
+const Header = () => <h1 className="header">Hello World</h1>;
+
+export default Header;
+
+//then in App.js
+import Header from "./components/Header";
+
+const App = () => {
+    return <Header />;
+};
+
+
+//Content.js
+const Content = () => {
+    <main>
+        <p className="lead">Great app i reckon</p>
+        <img className="img" alt="a picture" src="http/" />
+    </main>
+}
+
+export default Content;
+
+
+import Header from "./components/Header";
+import Content from "./components/Content"
+
+const App = () => {
+    return <Header />;
+    return <Content />;
+};
+
+
+//adding additional js functionality to components
+//Content.js
+const Content = () => {
+    let valuation = 45000;
+    let formattedValue = valuation.toLocaleString("en-GB", {
+        style: "currency",
+        currency: "USD"
+    });
+    <main>
+        <p className="lead">Great app i reckon</p>
+        <img className="img" alt="a picture" src="http/" />
+        <p>Our company is worth {formattedValue}</p>
+    </main>
+}
