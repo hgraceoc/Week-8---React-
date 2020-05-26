@@ -5,6 +5,7 @@ import Square from "./Square";
 import People from "./People";
 import Basket from "./Basket";
 import BasketItem from "./BasketItem";
+import Clicked from "./Clicked";
 
 const Stuff = () => (
     <div>
@@ -14,6 +15,7 @@ const Stuff = () => (
         <People />
         <Basket />
         <BasketItem />
+        <Clicked />
   </div>
 );
 
