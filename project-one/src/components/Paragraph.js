@@ -4,7 +4,7 @@ class Paragraph extends Component {
     render() {
     const { children } = this.props;
     return (
-        <p>{children ? <p>{ children }</p> : "Hello, world"} </p>
+        <p>{children ?  children : "Hello, world"} </p>
         );
       }
     }
