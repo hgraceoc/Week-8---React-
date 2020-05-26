@@ -7,6 +7,7 @@ import Basket from "./Basket";
 import BasketItem from "./BasketItem";
 import Clicked from "./Clicked";
 import Counter from "./Counter";
+import StepCounter from "./StepCounter";
 
 const Stuff = () => (
     <Fragment>
@@ -18,6 +19,7 @@ const Stuff = () => (
         <BasketItem />
         <Clicked />
         <Counter />
+        <StepCounter />
   </Fragment>
 );
 
