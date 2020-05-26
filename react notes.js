@@ -256,3 +256,127 @@ const Stuff = () => (
 );
 
 export default Stuff;
+
+
+//EVENTS
+
+//stateless component = functional component 
+
+//statedriven compoments = class based components
+
+onClick //syntax for event listener
+
+//Header.js
+const Header = ({ subTitle, children }) => (
+    <header onClick={() => console.log("hi")}>
+        <h1 className="alert alert-primary">{children}</h1>
+        {subTitle ? <h3>{subTitle}</h3> : null}
+    </header>
+);
+
+//App.js - alternative implemetation
+<Header onClick={() =>console.log("hi")}></Header>
+
+
+
+//Header.js
+import React, { Component } from "react"; 
+
+class Header extends Component {
+    
+render() {
+    const { subTitle, children } = this.props; //destructuring, for props
+    return (
+        <header onClick={() => console.log("hi")}>
+            <h1>{children}</h1>
+        </header>
+    );
+  }
+}
+
+//functionality moved into a method, transforming a functional component into a class based component
+import React, { Component } from "react"; 
+
+class Header extends Component {
+ //now that it is a class, we can use methods (handleClick)
+ handleClick() {
+    console.log("hi")
+ }    
+render() {
+    const { subTitle, children } = this.props; //destructuring, for props
+    return (
+        <header onClick={this.handleCLick}>
+            <h1>{children}</h1>
+        </header>
+    );
+  }
+}
+
+//State
+
+//react recognises the concept of state, and the concept of props
+
+import React, { Component } from "react"; 
+
+class Header extends Component {
+    constructor(props) {
+        super(props);
+        //passing in props into our constructor, to have access to this.props
+        this.state = { counter: 0 };
+        //for any data that you want to store, set the state
+    }
+ 
+ handleClick() {
+    let currentCounter = this.state.counter;
+    //this loses its meaning in the method, which calls for binding within the structure (see below)
+
+    this.setState({ counter: currentCounter + 1 });
+ }   
+
+render() {
+    const { subTitle, children } = this.props; //destructuring, for props
+    const { counter } = this.state; //destructuring to access counter - otherwise would locate with - this.state.counter 
+    return (
+        <header onClick={this.handleCLick}>
+            <h1>{children}</h1>
+        </header>
+    );
+  }
+}
+
+
+//method binding
+import React, { Component } from "react"; 
+
+class Header extends Component {
+    constructor(props) {
+        super(props);
+        
+        this.state = { counter: 0 };
+        
+        this.handleClick = this.handleClick.bind(this);
+        //binding
+        //this would not have to occur if you wrote methods as arrow functions - however this would result in multiple instances of the method
+        // handleClick() => {
+        //     let currentCounter = this.state.counter;
+        
+        //     this.setState({ counter: currentCounter + 1 });
+        //  }   
+    }
+ 
+ handleClick() {
+    let currentCounter = this.state.counter;
+
+    this.setState({ counter: currentCounter + 1 });
+ }   
+
+render() {
+    const { subTitle, children } = this.props;
+    const { counter } = this.state; 
+    return (
+        <header onClick={this.handleCLick}>
+            <h1>{children}</h1>
+        </header>
+    );
+  }
+}
