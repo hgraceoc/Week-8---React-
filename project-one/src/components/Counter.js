@@ -27,8 +27,7 @@ class Counter extends Component {
     }
 
     render() {
-        const { initial, max} = this.props;
-        const { counter } = this.state;
+        
     return (
         <div>
             <p>{ this.state.counter }</p>

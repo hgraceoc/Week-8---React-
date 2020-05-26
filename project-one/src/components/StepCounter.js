@@ -27,8 +27,7 @@ class StepCounter extends Component {
     }
 
     render() {
-        const { step, max} = this.props;
-        const { counter } = this.state;
+   
     return (
         <div>
             <p>{ this.state.counter }</p>
