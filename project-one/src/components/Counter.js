@@ -13,13 +13,17 @@ class Counter extends Component {
     handleClick() {
         let currentCounter = this.state.counter;
 
-        this.setState({ counter: currentCounter + 1 });
+        if (this.state.counter < this.props.max ) {
+            this.setState({ counter: currentCounter + 1 });
+        }
     }
 
     handleClickMinus() {
         let currentCounter = this.state.counter;
 
-        this.setState({ counter: currentCounter - 1 });
+        if (this.state.counter > 0) {
+            this.setState({ counter: currentCounter - 1 });
+        }
     }
 
     render() {
@@ -27,9 +31,9 @@ class Counter extends Component {
         const { counter } = this.state;
     return (
         <div>
-        <p>{ this.state.counter }</p>
-        <button onClick={this.handleClick}>+</button>
-        <button onClick={this.handleClickMinus}>-</button>
+            <p>{ this.state.counter }</p>
+            <button onClick={this.handleClick}>+</button>
+            <button onClick={this.handleClickMinus}>-</button>
         </div>
     );
 }

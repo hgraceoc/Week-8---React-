@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import Square from "./Square";
@@ -9,7 +9,7 @@ import Clicked from "./Clicked";
 import Counter from "./Counter";
 
 const Stuff = () => (
-    <div>
+    <Fragment>
         <Header>Howdy</Header>
         <Paragraph>Hello hello hello</Paragraph>
         <Square />
@@ -18,7 +18,7 @@ const Stuff = () => (
         <BasketItem />
         <Clicked />
         <Counter />
-  </div>
+  </Fragment>
 );
 
 
