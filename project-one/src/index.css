@@ -20,7 +20,7 @@ h1 {
   color: cornflowerblue;
 }
 
-h2 {
+h2, .section_heading {
   color: cornflowerblue;
 }
 
@@ -57,4 +57,12 @@ table {
 
 .colour_square {
   margin: auto;
+}
+
+.form {
+  justify-content: start;
+}
+
+label {
+  padding-right: 1rem;
 }
