@@ -8,7 +8,9 @@ class People extends Component {
     render() {
     const { people } = this.props;
         return people ? (
-        <ul onClick={this.handleClick}className="thePeople">
+        
+        <ul class="people" onClick={this.handleClick}className="thePeople">
+            <h2>The People</h2>
             {people.map((value, index) => (
                 <li className="person" key={ index }>
                     <p className="person-item">{ value }</p>

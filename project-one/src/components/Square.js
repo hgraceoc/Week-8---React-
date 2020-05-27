@@ -19,7 +19,7 @@ class Square extends Component {
         let colour = this.state.green ? "green" : this.props.colour;
             
             return (
-                <div 
+                <div class="colour_square"
                     onClick={ this.handleClick}
                     style={{
                         height: 100,

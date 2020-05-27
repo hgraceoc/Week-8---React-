@@ -29,7 +29,7 @@ class Counter extends Component {
     render() {
         
     return (
-        <div>
+        <div class="centered">
             <p>{ this.state.counter }</p>
             <button onClick={this.handleClick}>+</button>
             <button onClick={this.handleClickMinus}>-</button>

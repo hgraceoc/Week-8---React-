@@ -2,6 +2,7 @@ import React from "react";
 import BasketItem from "./BasketItem";
 
 const Basket = ( { items }) => (
+    <div class="centered">
     <table className="table">
         <thead>
             <tr>
@@ -15,7 +16,7 @@ const Basket = ( { items }) => (
             ))}
         </tbody>
     </table> 
-    
+    </div>
 );
 
 Basket.defaultProps = {

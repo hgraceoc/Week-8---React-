@@ -12,7 +12,7 @@ import StepCounter from "./StepCounter";
 const Stuff = () => (
     <Fragment>
         <Header>Howdy</Header>
-        <Paragraph>Hello hello hello</Paragraph>
+        <Paragraph>Life and stuff and stuff and life an that</Paragraph>
         <Square />
         <People />
         <Basket />
