@@ -46,8 +46,21 @@ button {
 }
 
 table {
-  background-color: rgb(153, 182, 238);
   margin: auto;
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+thead {
+  color: orange;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  padding-right: 1rem;
 }
 
 .people {
@@ -65,4 +78,5 @@ table {
 
 label {
   padding-right: 1rem;
+  color: cornflowerblue;
 }

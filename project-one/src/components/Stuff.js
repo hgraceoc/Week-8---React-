@@ -9,6 +9,8 @@ import Clicked from "./Clicked";
 import Counter from "./Counter";
 import StepCounter from "./StepCounter";
 import Length from "./Forms/Length";
+import PasswordStrength from "./Forms/PasswordStrength";
+import TempConverter from './Forms/TempConverter';
 
 const Stuff = () => (
     <Fragment>
@@ -22,6 +24,8 @@ const Stuff = () => (
         <Counter />
         <StepCounter />
         <Length />
+        <PasswordStrength />
+        <TempConverter />
   </Fragment>
 );
 
