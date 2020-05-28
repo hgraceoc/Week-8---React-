@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
 
 class Counter extends Component {
     constructor(props) {
@@ -31,7 +32,7 @@ class Counter extends Component {
     return (
         <div className="centered">
             <p>{ this.state.counter }</p>
-            <button onClick={this.handleClick}>+</button>
+            <button variant="info" onClick={this.handleClick}>+</button>
             <button onClick={this.handleClickMinus}>-</button>
         </div>
     );

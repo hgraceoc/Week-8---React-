@@ -8,7 +8,7 @@ class People extends Component {
     render() {
     const { people } = this.props;
         return people ? (
-        
+        <div className="people">
         <ul className="people" onClick={this.handleClick}className="thePeople">
             <h2>The People</h2>
             {people.map((value, index) => (
@@ -16,9 +16,11 @@ class People extends Component {
                     <p className="person-item">{ value }</p>
                 </li>
             ))}
-        </ul> ) : <p>Nothing to see here</p>
+        </ul>
+        </div> ) : <p>Nothing to see here</p>
     ;
   }
+  
 }
 
 People.defaultProps = {
