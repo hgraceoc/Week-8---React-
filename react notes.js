@@ -380,3 +380,78 @@ render() {
     );
   }
 }
+
+
+//FORMS
+
+import React, { Component} from "react";
+
+class Input extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = { input: "Hello world" };
+
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(e) {
+        this.setState({ input: e.currentTarget.value });
+    }
+
+    render() {
+        return (
+            <form className="form mb-4">
+                <input value={this.state.input} onChange={(e) => this.handleChange(e)} 
+                className="form-control" />
+                <p>Password Length: {this.state.input.length}</p>
+            </form>
+            //passing in (e) as an event - an object that exists in the dom
+        );
+    }
+
+}
+
+//important to access the event to see what the user has typed
+export default Input;
+
+import React from 'react';
+
+class Form extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            input: ''
+        }
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(event) {
+        //event not a key word, but is convention (or e)
+        //event.currentTarget - selects the html element, similar to query selector in DOM 
+        this.setState({
+            input: event.currentTarget.value
+        });
+    }
+
+    render() {
+        return (
+            <form>
+                <input 
+                    type='text'
+                    value={ this.state.input } 
+                    onChange={ this.handleChange }>
+                </input>
+            </form>
+
+            //onChange - listening for an event 
+        )
+    }
+}
+
+export default Form;
+
+
+//PRE BUILT COMPONENTS
+
+//react bootstrap
