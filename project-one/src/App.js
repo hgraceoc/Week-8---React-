@@ -29,15 +29,12 @@ const App = () => (
     <Fragment>  
       <Header>Howdy</Header>
       <Clicked></Clicked>
-      <Progress></Progress>
-      <CatchMeIfYouCan></CatchMeIfYouCan>
       
 
       <Route path="/">
       <Paragraph>Life and stuff and stuff and life an that</Paragraph>
       </Route>
 
-      <Route exact path="/CatchMe" component ={ CatchMeIfYouCan }/>
       
       <Route exact path="/Square" component ={ Square }/>
 
@@ -54,6 +51,10 @@ const App = () => (
       <Route exact path="/Password" component ={ PasswordStrength }/>
 
       <Route exact path="/TempConverter" component ={ TempConverter }/>
+
+      <Route exact path="/Progress" component ={ Progress }/>
+
+      <Route exact path="/CatchMe" component ={ CatchMeIfYouCan }/>
 
       <Route exact path="/List" component ={ List }/>
 

@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => (
-  <ul className="list-group">
+  <ul className="list-group centered">
     <li className="list-group-item">
       { /* use Link instead of <a> */ }
       <Link to="/">Home</Link>
@@ -52,6 +52,11 @@ const Footer = () => (
     <li className="list-group-item">
       { /* use Link instead of <a> */ }
       <Link to="/CatchMe">Catch Me</Link>
+    </li>
+
+    <li className="list-group-item">
+      { /* use Link instead of <a> */ }
+      <Link to="/Progress">Progress Bar</Link>
     </li>
 
 </ul> );
