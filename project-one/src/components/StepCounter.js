@@ -32,7 +32,7 @@ class StepCounter extends Component {
     render() {
    
     return (
-        <div class="centered">
+        <div className="centered">
             <p>{ this.state.counter }</p>
             <button onClick={this.handleClickUp}>+</button>
             <button onClick={this.handleClickDown}>-</button>

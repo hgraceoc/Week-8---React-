@@ -2,7 +2,7 @@ import React from "react";
 import BasketItem from "./BasketItem";
 
 const Basket = ( { items }) => (
-    <div class="centered">
+    <div>
     <table className="table">
         <thead>
             <tr>

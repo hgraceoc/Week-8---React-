@@ -18,6 +18,8 @@ class PasswordStrength extends Component {
         let length = this.state.input.length;
         if (length < 9) {
             return style = {borderColor:"red"};
+            // if (length > 9 && < 16) {
+            //     return style = {borderColor:"orange"};
         }
     }
 

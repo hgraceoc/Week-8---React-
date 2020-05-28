@@ -4,7 +4,7 @@ class Paragraph extends Component {
     render() {
     const { children } = this.props;
     return (
-        <p class="centered main_p">{children ?  children : "Hello, world"} </p>
+        <p className="centered main_p">{children ?  children : "Hello, world"} </p>
         );
       }
     }

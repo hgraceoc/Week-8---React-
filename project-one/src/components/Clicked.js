@@ -16,7 +16,7 @@ class Clicked extends Component {
     render() {
 
         return (
-            <p class="centered click_me" onClick={this.handleClick}> {this.state.clicked ? "Clicked!" : "Not Clicked" }
+            <p className="centered click_me" onClick={this.handleClick}> {this.state.clicked ? "Clicked!" : "Not Clicked" }
             </p>
         );
       }
