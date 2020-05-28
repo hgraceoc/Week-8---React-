@@ -40,6 +40,10 @@ button {
   padding: 1rem;
 }
 
+.list_button {
+  padding: 1rem;
+}
+
 .click_me {
   font-size: 2rem;
   color: orange;
@@ -66,6 +70,7 @@ td {
 .people {
   margin: auto;
   text-align: center;
+  list-style-type: none;
 }
 
 .colour_square {
@@ -76,7 +81,29 @@ td {
   justify-content: start;
 }
 
+input {
+  border-radius: 2px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+
 label {
   padding-right: 1rem;
   color: cornflowerblue;
+}
+
+.list-group {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.list-group-item {
+  color: cornflowerblue;
+}
+
+
+li {
+  list-style-type: none;
 }
