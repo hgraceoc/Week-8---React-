@@ -8,7 +8,7 @@ class Header extends Component {
         <Container fluid>
         <header className="centered">
             <h1>{ children }</h1>
-            <p>This is the quiz</p>
+            <h4>This be the Friday quiz</h4>
         </header>
       </Container>
       );

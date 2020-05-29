@@ -4,6 +4,7 @@ import './App.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Multiplier from "./components/Multiplier";
+import MultiplierBasic from "./components/MultiplierBasic";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -13,6 +14,7 @@ const App = () => (
       <Header>Alright Alright Alright</Header>
       
       <Route exact path="/Multiplier" component ={ Multiplier }/>
+      <Route exact path="/Multiplier" component ={ MultiplierBasic }/>
 
       <Route path="/">
         

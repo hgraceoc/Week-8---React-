@@ -31,6 +31,9 @@ render() {
         <div className="centered">
              <Form>
                 <Row>
+                    <h2 class="centered">Multiply!</h2>
+                </Row>
+                <Row>
                     <Col>
                     <Form.Control placeholder="NumberOne" 
                         value={this.state.x} 
