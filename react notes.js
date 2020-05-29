@@ -452,6 +452,9 @@ class Form extends React.Component {
 export default Form;
 
 
+
+
+
 //PRE BUILT COMPONENTS
 
 //react bootstrap
@@ -482,12 +485,20 @@ return (
 export default Button; 
 
 
+
+
+
 //DEPLOYMENT
 
 //npm install gh-pages
 
-//package.json
+// in package.json
 //"homepage": "https://hgraceoc.github.io/<repo>"
 
 //scripts
 //"deploy": "hg-pages -d build"
+
+//in App.js
+//change import from Browser Router to Hash Router
+
+//TERMINAL
