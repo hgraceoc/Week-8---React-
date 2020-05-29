@@ -10,7 +10,11 @@ const Footer = () => (
       </li>
 
       <li className="list-group-item">
-        <Link to="/Multiplier">Multiplier</Link>
+        <Link to="/multiplier">Multiplier</Link>
+      </li>
+
+      <li className="list-group-item">
+        <Link to="/even-clicks">Even Clicks</Link>
       </li>
 
       </ul> );
