@@ -17,6 +17,10 @@ const Footer = () => (
         <Link to="/even-clicks">Even Clicks</Link>
       </li>
 
+      <li className="list-group-item">
+        <Link to="/count-by">Count By</Link>
+      </li>
+
       </ul> );
 
 export default Footer;
