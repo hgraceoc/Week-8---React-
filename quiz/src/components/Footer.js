@@ -21,6 +21,10 @@ const Footer = () => (
         <Link to="/count-by">Count By</Link>
       </li>
 
+      <li className="list-group-item">
+        <Link to="/hide-me">Hide Me</Link>
+      </li>
+
       </ul> );
 
 export default Footer;
