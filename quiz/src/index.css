@@ -31,6 +31,10 @@ h2 {
   color: cornflowerblue;
 }
 
+.marg {
+  margin: 1rem;
+}
+
 h4 {
   color: rgb(78, 121, 201);
 }

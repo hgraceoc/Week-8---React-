@@ -38,9 +38,9 @@ class MinimumLength extends Component {
                 onChange={(e) => this.handleChange(e)}/>
             </Col>
         </Row>
-        <Row>
+        <Row className="marg">
         { this.state.input.length < length ? 
-        <Alert variant="info">
+        <Alert className="centered" variant="info">
             This is simply not long enough
           </Alert> : null }
         </Row>
