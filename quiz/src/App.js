@@ -8,6 +8,7 @@ import MultiplierBasic from "./components/MultiplierBasic";
 import EvenClicks from "./components/EvenClicks";
 import CountBy from "./components/CountBy";
 import HideMe from "./components/HideMe";
+import MinimumLength from "./components/MinimumLength";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -21,6 +22,7 @@ const App = () => (
       <Route exact path="/even-clicks" component ={ EvenClicks }/>
       <Route exact path="/count-by" component ={ CountBy }/>
       <Route exact path="/hide-me" component ={ HideMe }/>
+      <Route exact path="/min-length" component ={ MinimumLength }/>
 
       <Route path="/">
         

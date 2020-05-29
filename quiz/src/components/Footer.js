@@ -25,6 +25,10 @@ const Footer = () => (
         <Link to="/hide-me">Hide Me</Link>
       </li>
 
+      <li className="list-group-item">
+        <Link to="/min-length">Minimum Length</Link>
+      </li>
+
       </ul> );
 
 export default Footer;
