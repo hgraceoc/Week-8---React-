@@ -7,7 +7,7 @@ class MultiplierBasic extends Component {
         const { x, y } = this.props;
         return (
             <>
-            <h2 class="centered">Multiplying Hidden Props</h2>
+            <h2 className="centered">Multiplying Hidden Props</h2>
             <p className="centered">{ this.props.x * this.props.y }</p>
             </>
         )

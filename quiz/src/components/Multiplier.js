@@ -31,7 +31,7 @@ render() {
         <div className="centered">
              <Form>
                 <Row>
-                    <h2 class="centered">Multiply!</h2>
+                    <h2 className="centered">Multiply!</h2>
                 </Row>
                 <Row>
                     <Col>

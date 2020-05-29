@@ -23,14 +23,14 @@ class HideMe extends Component {
         return (
             <div className="centered">
                 <h2 className="centered" 
-                        onClick={ this.handleClick }>Hide Me</h2>
-                            {this.state.clicked ? 
-                            <p style={{display:"none"}}>{ children }</p> :
-                            <p>{ children }</p>}
-                </div>
+                    onClick={ this.handleClick }>Hide Me</h2>
+                        {this.state.clicked ? 
+                        <p style={{display:"none"}}>{ children }</p> :
+                        <p>{ children }</p>}
+            </div>
             
         );
-  }
+    }
 }
 
 
